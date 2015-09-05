@@ -13,13 +13,28 @@ national conferences like FOSSTER'09, [Debutsav](http://debutsav.in/), [conf.kde
 ## What do we do?
 
 We aim to provide you with the best Open Source training and services. We focus on three different fields especially:
-<li>Open Source Solutions</li>
-<li>Mentor - Student mapping</li>
+<li>Open Source Solutions and applications </li>
+<li>Online portal for Mentor to meet mentors, conduct workshops etc </li>
 <li>Onsite training at school, college, corporate levels</li>
 <br>
 Come, checkout out our [website](http://thinkfoss.com) and get to know us more!
 
 
-## How does ThinkFOSS differ ?
+## Latest Post 
+<ul class="posts">
+  {% for post in site.posts limit:1 %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+      {{ post.content }}
+    </li>
+  {% endfor %}
+</ul>
 
-We differ from others because we do it in style.
+## Few Posts from the past
+<ul class="posts">
+  {% for post in site.posts limit:5 %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt  }}
+    </li>
+  {% endfor %}
+</ul>
+
