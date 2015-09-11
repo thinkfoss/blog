@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Introducing ThinkFOSS..."
+title: "The ThinkFOSS blog"
 category:
 tags: [thinkfoss]
 ---
